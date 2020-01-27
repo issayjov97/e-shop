@@ -1,0 +1,606 @@
+*{
+
+	box-sizing: border-box;
+}
+
+body{
+
+font-size: 15px;
+line-height: 30px;
+color: #464646;	
+}
+p{
+	margin: 0;
+	padding:0;
+}
+a{
+text-decoration: none;
+display: inline-block;
+color: black;
+
+}
+h1{
+	margin: 0;
+	padding:0;
+	color: black;
+
+}
+
+
+table{
+
+width: 100%;	
+}
+
+.visually-hidden{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin:-1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0,0,0,0);
+	overflow: hidden;
+}
+h2{
+	margin: 0;
+	padding:0;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+
+header{
+
+	margin-top: 40px;
+	margin-bottom: 70px;
+
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.main-header-inner{
+
+background-color: #f7e296;	
+padding-bottom: 40px;
+
+}
+
+.main-header-title{
+ position: relative;
+ top:-20px;
+ left: 60px;
+ 
+
+}
+.search{
+position: relative;
+float: left;
+padding-left: 40px;
+}
+
+
+.header-top{
+
+text-align: center;	
+}
+
+
+
+
+.header-compare{
+	padding-left: 15px;
+	margin-right: 65px;
+	position: relative;
+   float:right;
+}
+
+.header-compare:before{
+width: 10px;
+position: absolute;
+font-family: 'icomoon';
+content: "\e900";
+ left:0px;
+}
+
+.header-login{
+	position: relative;
+	padding-left: 20px;
+}
+.header-login:before{
+position: absolute;
+font-family: 'icomoon';
+content: "\e971";
+left:0px;
+}
+
+.header-bucket{
+position: relative;
+	float:right;
+	margin-right: 60px;
+padding-left: 20px;
+}
+
+.header-bucket:before{
+
+position: absolute;
+font-family: 'icomoon';
+ content: "\e93a";
+left:0px;
+
+}
+.header-bucket:after{
+position: absolute;
+font-family: 'icomoon';
+ content: "\e93a";
+left:0px;
+
+}
+
+
+.header-main nav{
+text-align: center;
+
+}
+
+.menu-navigace{
+font-size: 18px;
+line-height: 24px;
+font-weight: 700;
+margin-top:35px;
+display: flex;
+justify-content: space-around;	
+flex-wrap: wrap;
+}
+.menu-navigace .menu-navigace2 li{
+display: inline-block;
+margin-right: 15px;
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.dots{
+	margin-top: -50px;
+	margin-bottom: 40px;
+}
+
+/* Next & previous buttons */
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slider-right{
+	margin-left: 125px;
+	margin-top: 70px;
+}
+
+.slider-right .item-title{
+	font-size: 47px;
+	line-height: 56px;
+font-weight: 700;
+
+}
+.product-info{
+
+	display: flex;
+}
+
+.product-types{
+
+display: flex;
+justify-content: space-around;	
+text-align: center;
+}
+
+.product-type img{
+top: 50%;
+left: 50%;
+position: absolute;
+transform: translate(-50%, -50%);
+}
+
+.product-type div{
+position: relative;
+text-align: center;
+width: 150px;
+background-color:#f7e296;
+height: 150px;
+}
+
+.deliver{
+	background-color: #e5e5e5;
+	margin-top: 100px;
+}
+
+.deliver-list{
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: black;
+
+}
+.deliver-list li{
+ display: inline-block;
+margin-bottom: 35px;
+margin-right: 10px;	
+
+}
+.deliver-inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url('../images/delivery.png');
+	background-repeat: no-repeat;
+	background-position:  right top;
+	min-height: 250px;
+}
+
+.deliver-center{
+
+width: 445px;
+}
+
+.companies{
+	margin-top: 90px;
+}
+.companies-inner{
+	display: flex;
+justify-content: space-between;
+}
+
+.index-columns{
+
+margin-top: 100px;	
+}
+ 
+.index-inner{
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.about{
+	width: 465px;
+}
+
+.contacts{
+
+width: 578px;	
+}
+
+.footer{
+background-color: #464646;
+min-height: 250px;
+
+}
+footer .footer-title{
+	margin: 0;
+}
+.footer-top{
+
+display: flex;
+justify-content: space-between;
+padding-top: 40px;
+}
+
+.footer-list li{
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.footer-list a{
+
+	color: white;
+}
+
+.footer-services{
+	display: flex;
+	justify-content: space-between;
+	color: #ffffff;
+	margin-top: 30px;
+}
+
+.footer-services .services-list li{
+	display: inline-block;
+	margin-left: 35px;
+
+}
+
+.footer-social{
+margin-top: 60px;
+}
+
+.social-list{
+	display: flex;
+	justify-content: center;
+}
+
+.social-list li{
+margin-left: 20px;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color:transparent;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: white;}
+
+
+
+
+
+
+
+
+/*  Product Style*/
+
+.catalog-columns{
+	display: flex;
+	justify-content: space-between;
+}
+.product-price a{
+
+width: auto;
+
+}
+
+.product-price b{
+line-height: 30px;
+
+font-size: 20px;
+text-align: center;
+}
+.product-details ul{
+list-style: none;
+
+}
+
+.product-photos{
+	width: 460px;
+}
+
+.product-details{
+	width: 390px;
+}
+
+
+
+
+.product-photo-preview li {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-photo-full {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-article {
+  text-align: right;
+  color: #aeaeae;
+}
+
+
+
+.signup-form {
+
+max-width: 400px;
+}
+
+
+.signup-form input,.signup-form a{
+
+width: 100%;
+padding: 4px 0;
+display: block;
+margin-bottom:10px;
+max-width: 400px;
+}
+
+
+input, select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+color:  white;
+border-color:grey;
+border-width: 2px;
+}
+
+
+.admin-header .title{
+
+	margin-bottom: 30px;
+}
+
+.admin-header .back{
+	float: right;
+}
+
+
+.admin-menu li,  .back,.button{
+
+display: inline-block;
+background-color: #4CAF50;
+
+padding: 4px 4px;
+margin: 0 6px;
+border-radius: 6px;
+}
+.button{
+display: inline-block;
+background-color: #4CAF50;
+padding: 4px 4px;
+border-radius: 6px;
+color: white;
+text-align: center;
+width: 30%;
+
+
+}
+
+.admin-menu  a, .back{
+
+color: white;
+}
+
+
+
+.admin-products {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+ td,  th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+ tr:nth-child(even){background-color: #f2f2f2;}
+
+ tr:hover {background-color: #ddd;}
+
+ th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+textarea{
+
+	width: 30%;
+	height: 130px;
+	resize: none;
+}
+
+
+
+.header-btn-menu{
+	display: none;
+}
+
+.header-top form>input{
+	padding:4px 0;
+	margin: 0px;
+	width: 20%;
+	float: left;
+	margin-left: 10px
+}
+
+.header-top form>input[type = "submit"]{
+max-width: 100px;
+}
+
+.header-top form>input[type = "text"]{
+max-width: 200px;
+}
+
