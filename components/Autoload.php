@@ -11,6 +11,7 @@ function __autoload($class_name)
     foreach ($array_paths as $path) {
         $path = ROOT . $path . $class_name . '.php';
         if (is_file($path)) {
+            echo $path;
             include_once $path;
         }
     }

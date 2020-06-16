@@ -1,5 +1,6 @@
 <?php
 
+
 class Db
 {
 
@@ -9,12 +10,11 @@ private static $db;
         if(!isset($db))
         {
 
-        $paramsPath = ROOT . '/config/db_params.php';
-        $params = include($paramsPath);
-        
 
-        $dsn = "mysql:host={$params['host']};dbname={$params['dbname']}";
-        $db = new PDO($dsn, $params['user'], $params['password']);
+
+        $dsn = "mysql:host=" . DB_HOST  ;"dbname=". DB_NAME;
+        $db = new PDO($dsn, DB_USER, DB_PASSWORD);
+                $db-> setAttribute(PDO::ATTR_ERRMODE , PDO::ERRMODE_EXCEPTION);
         $db->exec("set names utf8");
         
       }
